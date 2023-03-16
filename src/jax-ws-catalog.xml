@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://dev33.facturacfdi.mx/WSTimbradoCFDIService?wsdl" uri="wsdl/dev33.facturacfdi.mx/WSTimbradoCFDIService.wsdl"/>
+    <system systemId="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService?xsd=1" uri="wsdl/dev33.facturacfdi.mx_80/WSTimbradoCFDIService.xsd_1"/>
+    <system systemId="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService?xsd=2" uri="wsdl/dev33.facturacfdi.mx_80/WSTimbradoCFDIService.xsd_2.xsd"/>
+    <system systemId="http://dev33.facturacfdi.mx:80/WSTimbradoCFDIService?xsd=3" uri="wsdl/dev33.facturacfdi.mx_80/WSTimbradoCFDIService.xsd_3.xsd"/>
+    <system systemId="http://www.w3.org/2005/05/xmlmime" uri="wsdl/www.w3.org/2005/05/xmlmime.xsd"/>
+</catalog>
