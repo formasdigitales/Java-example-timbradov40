@@ -26,7 +26,7 @@ del emisor y colocarlos en el documento.
 ```java
 	
 public class Principal {
-    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, FileNotFoundException, CertificateException, 	TransformerException, GeneralSecurityException {
+    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, FileNotFoundException,    CertificateException,TransformerException, GeneralSecurityException {
         ProcesaXML procesaXML = new ProcesaXML();
         File xml = new File("src/main/resources/cfdi_v40_generico.xml");
         File ceritifcate = new File("src/main/resources/ESCUELA_KEMPER_URGATE_EKU9003173C9.cer");
