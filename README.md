@@ -1,4 +1,5 @@
 #Java-example-timbradov40
+
 Ejemplo de timbrado CFDI 4.0 con Java
 
 # Requerimientos
@@ -18,14 +19,14 @@ Ejemplo de timbrado CFDI 4.0 con Java
     - WSTimbradoCFDIService
     - WSTimbradoCFDI
 
-En el proyecto se encuentra la clase Principal.java la cual ejecuta los metodos necesarios
+En el proyecto se encuentra la clase Principal.java la cual ejecuta los métodos necesarios
 para poder cambiar la fecha del documento, obtener el numero del certificado y el certificado 
 del emisor y colocarlos en el documento.
 
 ```java
 	
-	public class Principal {
-    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, FileNotFoundException, CertificateException, TransformerException, GeneralSecurityException {
+public class Principal {
+    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, FileNotFoundException, CertificateException, 	TransformerException, GeneralSecurityException {
         ProcesaXML procesaXML = new ProcesaXML();
         File xml = new File("src/main/resources/cfdi_v40_generico.xml");
         File ceritifcate = new File("src/main/resources/ESCUELA_KEMPER_URGATE_EKU9003173C9.cer");
@@ -40,9 +41,9 @@ del emisor y colocarlos en el documento.
 * La variable certificate tiene asignado el archivo .cer del emisor con el que haremos la prueba.
 * La variable privateKey tiene cargado el archivo .key de nuestro emisor.
 
-En la clase ProcesaXML.java se tienen los metodos necesarios para obtener el numero de certificado y el certificado en base64
-y enviarselo al xml además de tener el metodo de generarCadenaOriginal el cual es necesario para poder usar el metodo de 
+En la clase ProcesaXML.java se tienen los métodos necesarios para obtener el numero de certificado y el certificado en base64
+y enviárselo al xml además de tener el método de generarCadenaOriginal el cual es necesario para poder usar el método de 
 generarSello y colocarlo en el documento.
 
-En la clase Timbradoxml.java sera la clase que permitira realizar el envio del documento al webservice para su timbrado, en caso de algún error 
-este nos repondera con el codigo y descripción del error en caso contrario nos respondera con el xml timbrado.
+En la clase Timbradoxml.java sera la clase que permitirá realizar el envió del documento al webservice para su timbrado, en caso de algún error 
+este nos responderá con el código y descripción del error en caso contrario nos responderá con el xml timbrado.
